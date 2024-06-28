@@ -54,21 +54,12 @@ nav a {
 }
 
 .hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('hero.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
     text-align: center;
-}
-
-.hero .container {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 100px 0;
 }
 
 .hero h1 {
@@ -91,53 +82,49 @@ nav a {
     border-radius: 5px;
 }
 
-main {
-    padding: 2em 0;
+.hero button:hover {
+    background-color: #e6b800;
 }
 
-main h2 {
+.intro, .about, .course-details, .success-stories, .faqs, .contact {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.intro h2, .about h2, .course-details h2, .success-stories h2, .faqs h2, .contact h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-main p {
-    font-size: 24px;
+.intro p, .about p, .course-details ul, .success-stories p, .faqs ul, .contact p {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-main ul {
+.course-details ul {
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
-main li {
-    margin-bottom: 20px;
-}
-
-main button {
-    background-color: #ffcc00;
-    border: none;
-    color: #333;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.video-testimonials {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.course-details li {
+    margin-bottom: 10px;
 }
 
 .video-testimonials video {
     width: 30%;
-    border-radius: 10px;
+    margin: 10px;
 }
 
-form input,
-form textarea {
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact form input, .contact form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -145,7 +132,7 @@ form textarea {
     border-radius: 5px;
 }
 
-form button {
+.contact form button {
     background-color: #ffcc00;
     border: none;
     color: #333;
@@ -153,6 +140,20 @@ form button {
     cursor: pointer;
     font-size: 18px;
     border-radius: 5px;
+}
+
+.contact form button:hover {
+    background-color: #e6b800;
+}
+
+.contact p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
 }
 
 footer {
