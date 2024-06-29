@@ -4,77 +4,156 @@ body {
     padding: 0;
 }
 
-.header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.header h1 {
-    margin: 0;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-around;
 }
 
-nav ul li {
-    margin: 0;
+nav li {
+    margin-right: 20px;
 }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1em;
+nav a {
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #111;
-}
-
-.section {
-    padding: 2em;
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
     text-align: center;
 }
 
-.section h2 {
-    margin-top: 0;
+.hero .container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.footer {
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2em 0;
+}
+
+main h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main li {
+    margin-bottom: 20px;
+}
+
+main button {
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.video-testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.video-testimonials video {
+    width: 30%;
+    border-radius: 10px;
+}
+
+footer {
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 1em 0;
     text-align: center;
-    padding: 1em;
 }
 
+/* Contact Us Page Styles */
 .contact {
     padding: 2em 0;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
 .contact h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .contact p {
     font-size: 24px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .contact form {
@@ -96,9 +175,9 @@ nav ul li a:hover {
 }
 
 .contact form button {
-    background-color: #4CAF50;
+    background-color: #ffcc00;
     border: none;
-    color: #fff;
+    color: #333;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
@@ -106,7 +185,7 @@ nav ul li a:hover {
 }
 
 .contact form button:hover {
-    background-color: #45a049;
+    background-color: #e6b800;
 }
 
 .contact p a {
@@ -117,42 +196,4 @@ nav ul li a:hover {
 
 .contact p a:hover {
     text-decoration: underline;
-}
-
-/* Mobile navigation */
-.menu-toggle {
-    display: none;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        width: 100%;
-        left: 0;
-        padding: 10px 0;
-    }
-    
-    nav ul.show-menu {
-        display: flex;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
-    
-    .menu-toggle {
-        display: block;
-    }
 }
